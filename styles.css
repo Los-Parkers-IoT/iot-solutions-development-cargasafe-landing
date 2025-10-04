@@ -212,3 +212,228 @@ html {
         top: -50px;
     }
 }
+
+.pricing-section {
+  background-color: white;
+  padding: 80px 0;
+}
+
+.pricing-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.pricing-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.pricing-overline {
+  font-size: 16px;
+  font-weight: 700;
+  color: #FF9233;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 16px;
+  font-family: 'Source Sans Pro', sans-serif;
+}
+
+.pricing-title {
+  font-size: 32px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  line-height: 1.2;
+}
+
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.pricing-card {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 24px;
+  box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+  border: 1px solid #eee;
+  transition: transform .25s ease, box-shadow .25s ease;
+  text-align: center;
+}
+
+.pricing-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+}
+
+.pricing-card.is-featured {
+  border-color: #FF9233;
+  box-shadow: 0 12px 34px rgba(255,146,51,0.18);
+}
+
+.pricing-name {
+  font-size: 18px;
+  font-weight: 800;
+  color: #2F2F2F;
+  letter-spacing: .5px;
+  margin: 0 0 6px 0;
+}
+
+.pricing-subtitle {
+  font-size: 14px;
+  color: #6B6B6B;
+  margin: 0 0 16px 0;
+}
+
+.pricing-price {
+  font-size: 34px;
+  font-weight: 800;
+  color: #FF9233;
+  margin: 0 0 18px 0;
+  line-height: 1;
+}
+
+.pricing-price .currency {
+  font-size: 22px;
+  margin-right: 4px;
+}
+
+.pricing-price .period {
+  font-size: 18px;
+  font-weight: 700;
+  color: #FF9233;
+  margin-left: 2px;
+}
+
+.pricing-features {
+  list-style: none;
+  text-align: left;
+  margin: 0 auto 22px auto;
+  padding: 0;
+  max-width: 260px;
+}
+
+.pricing-features li {
+  font-size: 14px;
+  color: #2F2F2F;
+  padding-left: 22px;
+  margin: 10px 0;
+  position: relative;
+  line-height: 1.4;
+}
+
+/* Check rojo como en el mock */
+.pricing-features li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  transform: translateY(1px);
+  font-weight: 700;
+  color: #FF5A5A;
+}
+
+.pricing-btn {
+  background-color: #FF9233;
+  color: #fff;
+  border: none;
+  padding: 12px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 700;
+  font-family: 'Source Sans Pro', sans-serif;
+  cursor: pointer;
+  transition: background-color .25s ease, transform .1s ease;
+  width: 100%;
+  max-width: 220px;
+  margin: 6px auto 0 auto;
+  display: inline-block;
+}
+
+.pricing-btn:hover {
+  background-color: #e67d1a;
+}
+
+.pricing-btn:active {
+  transform: translateY(1px);
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .pricing-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pricing-section {
+    padding: 60px 0;
+  }
+  .pricing-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .pricing-title {
+    font-size: 28px;
+  }
+}
+
+@media (max-width: 480px) {
+  .pricing-section {
+    padding: 40px 0;
+  }
+  .pricing-title {
+    font-size: 24px;
+  }
+}
+
+/* === PRICING: Carrusel en mobile === */
+
+/* scrollbars (solo cuando hay overflow-x) */
+.pricing-grid::-webkit-scrollbar { height: 6px; }
+.pricing-grid::-webkit-scrollbar-track { background: #f1f1f1; border-radius: 3px; }
+.pricing-grid::-webkit-scrollbar-thumb { background: #FF9233; border-radius: 3px; }
+.pricing-grid::-webkit-scrollbar-thumb:hover { background: #e67d1a; }
+
+@media (max-width: 1024px) {
+  /* Mantén 2 columnas en tablets */
+  .pricing-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Cambiar a carrusel horizontal */
+  .pricing-section { padding: 60px 0; }
+
+  .pricing-grid {
+    display: flex;                 /* carrusel */
+    overflow-x: auto;              /* scroll horizontal */
+    overflow-y: visible;
+    gap: 20px;
+    padding: 20px;                 /* respiro como en testimonios */
+    scroll-snap-type: x mandatory; /* snap */
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .pricing-card {
+    flex: 0 0 280px;               /* ancho de cada slide */
+    scroll-snap-align: start;
+    padding: 26px 20px;            /* un pelín más compacto */
+  }
+
+  .pricing-title { font-size: 28px; }
+}
+
+@media (max-width: 480px) {
+  .pricing-section { padding: 40px 0; }
+  .pricing-grid { gap: 16px; padding: 16px; }
+  .pricing-card { flex-basis: 260px; padding: 22px 18px; }
+  .pricing-title { font-size: 24px; }
+}
