@@ -8,3 +8,162 @@ html {
   font-family: 'Source Sans 3', system-ui, -apple-system, sans-serif;
   overflow: hidden;
 }
+
+
+
+.footer {
+    background-color: #2F2F2F;
+    padding: 40px 0 20px 0;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1px;
+    margin-top: -20px;
+}
+
+.footer-logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.footer-logo-img {
+    height: 32px;
+    width: auto;
+}
+
+.footer-logo-text {
+    font-size: 20px;
+    font-weight: 700;
+    color: #FF9233;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.footer-social {
+    display: flex;
+    gap: 12px;
+        
+}
+
+.social-link {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    text-decoration: none;
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+}
+
+.social-link img {
+    width: 64px;
+    height: 64px;
+    object-fit: contain;
+}
+
+.footer-legal {
+    text-align: center;
+    border-top: 1px solid #444444;
+    padding-top: 20px;
+}
+
+.footer-legal p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #CCCCCC;
+    margin: 0;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+@media (max-width: 1024px) {
+    .platform-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .platform-section {
+        padding: 60px 0;
+    }
+    
+    .platform-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .platform-header {
+        margin-bottom: 40px;
+    }
+    
+    .platform-title {
+        font-size: 28px;
+    }
+    
+    .platform-card {
+        padding: 30px 20px;
+    }
+    
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .platform-section {
+        padding: 40px 0;
+    }
+    
+    .platform-title {
+        font-size: 24px;
+    }
+    
+    .platform-overline {
+        font-size: 14px;
+    }
+    
+    .platform-card {
+        padding: 25px 15px;
+    }
+    
+    .platform-icon img {
+        width: 60px;
+        height: 60px;
+    }
+    
+    .platform-card-title {
+        font-size: 18px;
+    }
+    
+    .footer {
+        padding: 30px 0 15px 0;
+    }
+    
+    .footer-content {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 12px;
+    }
+    
+    .footer-logo-text {
+        font-size: 18px;
+    }
+    
+    .social-link img {
+        width: 28px;
+        height: 28px;
+    }
+}
