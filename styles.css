@@ -117,10 +117,10 @@ html {
   background-color: #e67d1a;
 }
 
-.btn-app {
+.navbar .btn-app {
   background-color: white;
   color: #ff9233;
-  border: 2px solid #ff9233;
+  border: 1px solid #ff9233;
   padding: 10px 22px;
   border-radius: 6px;
   font-family: 'Source Sans 3', sans-serif;
@@ -131,9 +131,21 @@ html {
   text-decoration: none;
 }
 
-.btn-app:hover {
+.navbar .btn-app:hover {
   background-color: #ff9233;
   color: white;
+}
+.navbar .btn-switch-language {
+  background-color: white;
+  color: #ff9233;
+  border: 1px solid #ff9233;
+  padding: 10px 12px;
+  border-radius: 6px;
+  font-family: 'Source Sans 3', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 /* END HEADER */
 
