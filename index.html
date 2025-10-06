@@ -6,58 +6,61 @@
     <title>
       CargaSafe - Monitoreo inteligente para un transporte confiable
     </title>
-    <link rel="stylesheet" href="styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
+
     <script src="https://unpkg.com/@iconify/iconify@3.1.1/dist/iconify.js"></script>
   </head>
 
   <body>
     <!-- HERO SECTION -->
-    <section class="hero-section">
-      <!-- <nav class="navbar">
+    <header id="header" class="header">
+      <nav class="navbar">
         <div class="nav-container">
           <div class="nav-logo">
             <img src="assets/logo.png" alt="CargaSafe Logo" class="logo" />
           </div>
 
-          <div class="nav-menu">
-            <button class="nav-button">Funcionalidades</button>
-            <button class="nav-button">Beneficios</button>
-            <button class="nav-button">Testimonios</button>
-            <button class="nav-button">Contactos</button>
-          </div>
+          <ul class="nav-menu-list">
+            <a href="#features" class="nav-link">Funcionalidades</a>
+            <a href="#benefits" class="nav-link">Beneficios</a>
+            <a href="#testimonials" class="nav-link">Testimonios</a>
+            <a href="#pricing" class="nav-link">Planes</a>
+            <a href="#contactUs" class="nav-link">Contáctanos</a>
+          </ul>
 
           <div class="nav-actions">
-            <button class="btn-web">Acceder vía web</button>
-            <button class="btn-app">Descargar app</button>
+            <a href="#" class="btn-web">Acceder vía web</a>
+            <a href="#platforms" class="btn-app">Descargar app</a>
           </div>
         </div>
-      </nav> -->
-
+      </nav>
+    </header>
+    <section class="hero-section" id="hero">
       <div class="hero-content">
         <div class="hero-text">
           <h1 class="hero-title">Carga Safe</h1>
           <p class="hero-subtitle">
             Monitoreo inteligente para un transporte confiable.
           </p>
-          <button class="btn-quote">
+          <a href="#contactUs" class="btn-quote">
             ¡Cotízanos Ya!
             <iconify-icon
               icon="meteor-icons:chevron-right"
               class="quote-icon"
             ></iconify-icon>
-          </button>
+          </a>
         </div>
       </div>
     </section>
 
     <!-- FEATURES SECTION -->
-    <section class="features-section">
+    <section class="features-section" id="features">
       <div class="features-container">
         <div class="features-header">
           <p class="features-overline">FUNCIONALIDADES</p>
@@ -107,7 +110,7 @@
     </section>
 
     <!-- BENEFITS SECTION -->
-    <section class="benefits-section">
+    <section class="benefits-section" id="benefits">
       <div class="benefits-container">
         <div class="benefits-header">
           <p class="benefits-overline">BENEFICIOS</p>
@@ -172,7 +175,7 @@
     </section>
 
     <!-- TESTIMONIALS SECTION -->
-    <section class="testimonials-section">
+    <section class="testimonials-section" id="testimonials">
       <div class="testimonials-container">
         <div class="testimonials-header">
           <p class="testimonials-overline">TESTIMONIOS</p>
@@ -243,7 +246,7 @@
       </div>
     </section>
 
-    <section class="pricing-section" id="suscripciones">
+    <section class="pricing-section" id="pricing">
       <div class="pricing-container">
         <div class="pricing-header">
           <p class="pricing-overline">SUSCRIPCIONES</p>
@@ -306,7 +309,7 @@
     </section>
 
     <!-- QUOTE SECTION -->
-    <section class="quote-section">
+    <section class="quote-section" id="contactUs">
       <div class="quote-container">
         <div class="quote-content">
           <div class="quote-text">
@@ -371,7 +374,7 @@
       </div>
     </section>
 
-    <section class="platform-section">
+    <section class="platform-section" id="platforms">
       <div class="platform-container">
         <div class="platform-header">
           <p class="platform-overline">DISTRIBUCIÓN</p>
