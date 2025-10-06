@@ -1883,7 +1883,61 @@ body {
   color: white;
 }
 
+@media (max-width: 1024px) {
+  .platform-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .platform-section {
+    padding: 60px 0;
+  }
+
+  .platform-grid {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .platform-header {
+    margin-bottom: 40px;
+  }
+
+  .platform-title {
+    font-size: 28px;
+  }
+
+  .platform-card {
+    padding: 30px 20px;
+  }
+}
+
 @media (max-width: 480px) {
+  .platform-section {
+    padding: 40px 0;
+  }
+
+  .platform-title {
+    font-size: 24px;
+  }
+
+  .platform-overline {
+    font-size: 14px;
+  }
+
+  .platform-card {
+    padding: 25px 15px;
+  }
+
+  .platform-icon img {
+    width: 60px;
+    height: 60px;
+  }
+
+  .platform-card-title {
+    font-size: 18px;
+  }
   .footer {
     padding: 30px 0 15px 0;
   }
