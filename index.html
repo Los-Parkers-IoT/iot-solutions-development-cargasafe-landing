@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>
-      CargaSafe - Monitoreo inteligente para un transporte confiable
+      CargaSafe - Smart monitoring for reliable transportation
     </title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -13,7 +13,6 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-
     <script src="https://unpkg.com/@iconify/iconify@3.1.1/dist/iconify.js"></script>
   </head>
 
@@ -27,17 +26,17 @@
           </div>
 
           <ul class="nav-menu-list">
-            <a href="#features" class="nav-link">Funcionalidades</a>
-            <a href="#benefits" class="nav-link">Beneficios</a>
-            <a href="#testimonials" class="nav-link">Testimonios</a>
-            <a href="#pricing" class="nav-link">Planes</a>
-            <a href="#contactUs" class="nav-link">Contáctanos</a>
+            <a href="#features" class="nav-link" data-i18n="nav.features">Features</a>
+            <a href="#benefits" class="nav-link" data-i18n="nav.benefits">Benefits</a>
+            <a href="#testimonials" class="nav-link" data-i18n="nav.testimonials">Testimonials</a>
+            <a href="#pricing" class="nav-link" data-i18n="nav.pricing">Plans</a>
+            <a href="#contactUs" class="nav-link" data-i18n="nav.contact">Contact Us</a>
           </ul>
 
           <div class="nav-actions">
-            <a href="#" class="btn-web">Acceder vía web</a>
-            <a href="#platforms" class="btn-app">Descargar app</a>
-            <select class="btn-switch-language" id="swithLanguage" value="en">
+            <a href="#" class="btn-web" data-i18n="nav.webAccess">Web Access</a>
+            <a href="#platforms" class="btn-app" data-i18n="nav.downloadApp">Download App</a>
+            <select class="btn-switch-language" id="swithLanguage">
               <option value="en">EN</option>
               <option value="es">ES</option>
             </select>
@@ -48,12 +47,12 @@
     <section class="hero-section" id="hero">
       <div class="hero-content">
         <div class="hero-text">
-          <h1 class="hero-title">Carga Safe</h1>
-          <p class="hero-subtitle">
-            Monitoreo inteligente para un transporte confiable.
+          <h1 class="hero-title" data-i18n="hero.title">Carga Safe</h1>
+          <p class="hero-subtitle" data-i18n="hero.subtitle">
+            Smart monitoring for reliable transportation.
           </p>
           <a href="#contactUs" class="btn-quote">
-            ¡Cotízanos Ya!
+            <span data-i18n="hero.cta">Get a Quote Now!</span>
             <iconify-icon
               icon="meteor-icons:chevron-right"
               class="quote-icon"
@@ -67,8 +66,8 @@
     <section class="features-section" id="features">
       <div class="features-container">
         <div class="features-header">
-          <p class="features-overline">FUNCIONALIDADES</p>
-          <h2 class="features-title">¿Qué hace CargaSafe?</h2>
+          <p class="features-overline" data-i18n="features.overline">FEATURES</p>
+          <h2 class="features-title" data-i18n="features.title">What does CargaSafe do?</h2>
         </div>
 
         <div class="features-grid">
@@ -76,37 +75,32 @@
             <div class="feature-image">
               <img
                 src="assets/features/fn1.png"
-                alt="Monitoreo en tiempo real"
+                alt="Real-time Monitoring"
               />
             </div>
-            <h3 class="feature-card-title">Monitoreo en tiempo real</h3>
-            <p class="feature-card-description">
-              Visualiza la ubicación, temperatura y estado de tu carga desde
-              cualquier dispositivo. Mantente informado minuto a minuto con
-              datos precisos.
+            <h3 class="feature-card-title" data-i18n="features.realtime.title">Real-time Monitoring</h3>
+            <p class="feature-card-description" data-i18n="features.realtime.desc">
+              View the location, temperature, and status of your cargo from any device. Stay informed minute by minute with accurate data.
             </p>
           </div>
 
           <div class="feature-card">
             <div class="feature-image">
-              <img src="assets/features/fn2.png" alt="Alertas Inteligentes" />
+              <img src="assets/features/fn2.png" alt="Smart Alerts" />
             </div>
-            <h3 class="feature-card-title">Alertas Inteligentes</h3>
-            <p class="feature-card-description">
-              Recibe notificaciones inmediatas cuando tu carga esté en riesgo
-              (variaciones de temperatura, retrasos, aperturas no autorizadas).
-              Actúa antes de que sea demasiado tarde.
+            <h3 class="feature-card-title" data-i18n="features.alerts.title">Smart Alerts</h3>
+            <p class="feature-card-description" data-i18n="features.alerts.desc">
+              Receive immediate notifications when your cargo is at risk (temperature variations, delays, unauthorized openings). Act before it's too late.
             </p>
           </div>
 
           <div class="feature-card">
             <div class="feature-image">
-              <img src="assets/features/fn3.jpg" alt="Gestión Centralizada" />
+              <img src="assets/features/fn3.jpg" alt="Centralized Management" />
             </div>
-            <h3 class="feature-card-title">Gestión Centralizada</h3>
-            <p class="feature-card-description">
-              Administra todos tus envíos en una sola plataforma. Accede a
-              reportes, historial y métricas para optimizar la cadena logística.
+            <h3 class="feature-card-title" data-i18n="features.management.title">Centralized Management</h3>
+            <p class="feature-card-description" data-i18n="features.management.desc">
+              Manage all your shipments on a single platform. Access reports, history, and metrics to optimize your logistics chain.
             </p>
           </div>
         </div>
@@ -117,8 +111,8 @@
     <section class="benefits-section" id="benefits">
       <div class="benefits-container">
         <div class="benefits-header">
-          <p class="benefits-overline">BENEFICIOS</p>
-          <h2 class="benefits-title">¿Qué ganas con CargaSafe?</h2>
+          <p class="benefits-overline" data-i18n="benefits.overline">BENEFITS</p>
+          <h2 class="benefits-title" data-i18n="benefits.title">What do you gain with CargaSafe?</h2>
         </div>
 
         <div class="benefits-content">
@@ -126,32 +120,28 @@
             <div class="benefit-image">
               <img
                 src="assets/benefits/bn1.jpg"
-                alt="Reducción de Riesgos Operativos"
+                alt="Reduction of Operational Risks"
               />
             </div>
             <div class="benefit-text">
-              <h3 class="benefit-title">Reducción de Riesgos Operativos</h3>
-              <p class="benefit-description">
-                Detecta incidentes en el momento y evita pérdidas por fallas,
-                robos o retrasos. La respuesta inmediata asegura la operación y
-                protege la integridad de cada envío.
+              <h3 class="benefit-title" data-i18n="benefits.risks.title">Reduction of Operational Risks</h3>
+              <p class="benefit-description" data-i18n="benefits.risks.desc">
+                Detect incidents in real-time and avoid losses due to failures, theft, or delays. Immediate response ensures operations and protects the integrity of each shipment.
               </p>
             </div>
           </div>
 
           <div class="benefit-block benefit-right">
             <div class="benefit-text">
-              <h3 class="benefit-title">Optimización de Costos Logísticos</h3>
-              <p class="benefit-description">
-                Disminuye devoluciones, reclamos y desperdicios innecesarios.
-                Con información en tiempo real se logran mejores decisiones que
-                incrementan la eficiencia y elevan la rentabilidad.
+              <h3 class="benefit-title" data-i18n="benefits.costs.title">Logistics Cost Optimization</h3>
+              <p class="benefit-description" data-i18n="benefits.costs.desc">
+                Reduce returns, claims, and unnecessary waste. With real-time information, better decisions are made that increase efficiency and improve profitability.
               </p>
             </div>
             <div class="benefit-image">
               <img
                 src="assets/benefits/bn2.jpg"
-                alt="Optimización de Costos Logísticos"
+                alt="Logistics Cost Optimization"
               />
             </div>
           </div>
@@ -160,17 +150,15 @@
             <div class="benefit-image">
               <img
                 src="assets/benefits/bn3.jpg"
-                alt="Mayor Transparencia y Confianza Comercial"
+                alt="Greater Transparency and Business Trust"
               />
             </div>
             <div class="benefit-text">
-              <h3 class="benefit-title">
-                Mayor Transparencia y Confianza Comercial
+              <h3 class="benefit-title" data-i18n="benefits.transparency.title">
+                Greater Transparency and Business Trust
               </h3>
-              <p class="benefit-description">
-                Brinda acceso a información clara y verificable en cada envío.
-                La trazabilidad completa genera mayor confianza, fortalece
-                relaciones comerciales y abre nuevas oportunidades de negocio.
+              <p class="benefit-description" data-i18n="benefits.transparency.desc">
+                Provide access to clear and verifiable information for each shipment. Complete traceability generates greater trust, strengthens business relationships, and opens new business opportunities.
               </p>
             </div>
           </div>
@@ -182,8 +170,8 @@
     <section class="testimonials-section" id="testimonials">
       <div class="testimonials-container">
         <div class="testimonials-header">
-          <p class="testimonials-overline">TESTIMONIOS</p>
-          <h2 class="testimonials-title">Lo que dice la gente</h2>
+          <p class="testimonials-overline" data-i18n="testimonials.overline">TESTIMONIALS</p>
+          <h2 class="testimonials-title" data-i18n="testimonials.title">What people say</h2>
         </div>
 
         <div class="testimonials-grid">
@@ -192,12 +180,10 @@
               <img src="assets/testimonials/t1.png" alt="Andrea Salazar" />
             </div>
             <div class="testimonial-content">
-              <p class="testimonial-role">COORDINADORA DE LOGÍSTICA</p>
-              <h3 class="testimonial-name">Andrea Salazar</h3>
-              <p class="testimonial-quote">
-                Con CargaSafe podemos monitorear cada envío en tiempo real y
-                reaccionar ante cualquier alerta. Esto redujo riesgos y mejoró
-                la seguridad en toda la operación.
+              <p class="testimonial-role" data-i18n="testimonials.t1.role">LOGISTICS COORDINATOR</p>
+              <h3 class="testimonial-name" data-i18n="testimonials.t1.name">Andrea Salazar</h3>
+              <p class="testimonial-quote" data-i18n="testimonials.t1.quote">
+                With CargaSafe we can monitor each shipment in real-time and respond to any alert. This reduced risks and improved security throughout the operation.
               </p>
             </div>
           </div>
@@ -207,12 +193,10 @@
               <img src="assets/testimonials/t2.png" alt="José Ramírez" />
             </div>
             <div class="testimonial-content">
-              <p class="testimonial-role">JEFE DE LOGÍSTICA</p>
-              <h3 class="testimonial-name">José Ramírez</h3>
-              <p class="testimonial-quote">
-                La transparencia de la plataforma nos permite ver en todo
-                momento dónde está la carga. Ahora tenemos más control y menos
-                incidentes en nuestras entregas.
+              <p class="testimonial-role" data-i18n="testimonials.t2.role">LOGISTICS MANAGER</p>
+              <h3 class="testimonial-name" data-i18n="testimonials.t2.name">José Ramírez</h3>
+              <p class="testimonial-quote" data-i18n="testimonials.t2.quote">
+                The platform's transparency allows us to see where the cargo is at all times. Now we have more control and fewer incidents in our deliveries.
               </p>
             </div>
           </div>
@@ -222,12 +206,10 @@
               <img src="assets/testimonials/t3.png" alt="Claudia Ortega" />
             </div>
             <div class="testimonial-content">
-              <p class="testimonial-role">CLIENTE RETAIL</p>
-              <h3 class="testimonial-name">Claudia Ortega</h3>
-              <p class="testimonial-quote">
-                Me da confianza saber que recibo alertas en cada etapa y puedo
-                seguir mi pedido en tiempo real. CargaSafe me garantiza
-                puntualidad y transparencia.
+              <p class="testimonial-role" data-i18n="testimonials.t3.role">RETAIL CLIENT</p>
+              <h3 class="testimonial-name" data-i18n="testimonials.t3.name">Claudia Ortega</h3>
+              <p class="testimonial-quote" data-i18n="testimonials.t3.quote">
+                It gives me confidence knowing I receive alerts at each stage and can track my order in real-time. CargaSafe guarantees punctuality and transparency.
               </p>
             </div>
           </div>
@@ -237,12 +219,10 @@
               <img src="assets/testimonials/t4.png" alt="Miguel Paredes" />
             </div>
             <div class="testimonial-content">
-              <p class="testimonial-role">CLIENTE INDEPENDIENTE</p>
-              <h3 class="testimonial-name">Miguel Paredes</h3>
-              <p class="testimonial-quote">
-                Antes no sabía qué pasaba con mis envíos, ahora puedo
-                rastrearlos en todo momento. Las alertas de CargaSafe me dan
-                tranquilidad y confianza total.
+              <p class="testimonial-role" data-i18n="testimonials.t4.role">INDEPENDENT CLIENT</p>
+              <h3 class="testimonial-name" data-i18n="testimonials.t4.name">Miguel Paredes</h3>
+              <p class="testimonial-quote" data-i18n="testimonials.t4.quote">
+                Before, I didn't know what was happening with my shipments, now I can track them at all times. CargaSafe alerts give me peace of mind and total confidence.
               </p>
             </div>
           </div>
@@ -253,60 +233,54 @@
     <section class="pricing-section" id="pricing">
       <div class="pricing-container">
         <div class="pricing-header">
-          <p class="pricing-overline">SUSCRIPCIONES</p>
-          <h2 class="pricing-title">Elige tu plan</h2>
+          <p class="pricing-overline" data-i18n="pricing.overline">SUBSCRIPTIONS</p>
+          <h2 class="pricing-title" data-i18n="pricing.title">Choose your plan</h2>
         </div>
 
         <div class="pricing-grid">
           <!-- Plan Básico -->
           <article class="pricing-card">
-            <h3 class="pricing-name">PLAN BASICO</h3>
-            <p class="pricing-subtitle">Hasta 2 vehículos</p>
+            <h3 class="pricing-name" data-i18n="pricing.basic.name">BASIC PLAN</h3>
+            <p class="pricing-subtitle" data-i18n="pricing.basic.subtitle">Up to 2 vehicles</p>
             <p class="pricing-price">
-              <span class="currency">S/.</span> 29<span class="period"
-                >/mes</span
-              >
+              <span class="currency">S/.</span> 29<span class="period" data-i18n="pricing.period">/month</span>
             </p>
             <ul class="pricing-features">
-              <li>Monitoreo en tiempo real</li>
-              <li>Alertas inteligentes</li>
-              <li>Gestión centralizada</li>
+              <li data-i18n="pricing.feature1">Real-time monitoring</li>
+              <li data-i18n="pricing.feature2">Smart alerts</li>
+              <li data-i18n="pricing.feature3">Centralized management</li>
             </ul>
-            <button class="pricing-btn">Elegir plan</button>
+            <button class="pricing-btn" data-i18n="pricing.button">Choose plan</button>
           </article>
 
           <!-- Plan Estándar (destacado) -->
           <article class="pricing-card is-featured">
-            <h3 class="pricing-name">PLAN ESTANDAR</h3>
-            <p class="pricing-subtitle">Hasta 5 vehículos</p>
+            <h3 class="pricing-name" data-i18n="pricing.standard.name">STANDARD PLAN</h3>
+            <p class="pricing-subtitle" data-i18n="pricing.standard.subtitle">Up to 5 vehicles</p>
             <p class="pricing-price">
-              <span class="currency">S/.</span> 59<span class="period"
-                >/mes</span
-              >
+              <span class="currency">S/.</span> 59<span class="period" data-i18n="pricing.period">/month</span>
             </p>
             <ul class="pricing-features">
-              <li>Monitoreo en tiempo real</li>
-              <li>Alertas inteligentes</li>
-              <li>Gestión centralizada</li>
+              <li data-i18n="pricing.feature1">Real-time monitoring</li>
+              <li data-i18n="pricing.feature2">Smart alerts</li>
+              <li data-i18n="pricing.feature3">Centralized management</li>
             </ul>
-            <button class="pricing-btn">Elegir plan</button>
+            <button class="pricing-btn" data-i18n="pricing.button">Choose plan</button>
           </article>
 
           <!-- Plan Premium -->
           <article class="pricing-card">
-            <h3 class="pricing-name">PLAN PREMIUM</h3>
-            <p class="pricing-subtitle">Vehículos ilimitados</p>
+            <h3 class="pricing-name" data-i18n="pricing.premium.name">PREMIUM PLAN</h3>
+            <p class="pricing-subtitle" data-i18n="pricing.premium.subtitle">Unlimited vehicles</p>
             <p class="pricing-price">
-              <span class="currency">S/.</span> 99<span class="period"
-                >/mes</span
-              >
+              <span class="currency">S/.</span> 99<span class="period" data-i18n="pricing.period">/month</span>
             </p>
             <ul class="pricing-features">
-              <li>Monitoreo en tiempo real</li>
-              <li>Alertas inteligentes</li>
-              <li>Gestión centralizada</li>
+              <li data-i18n="pricing.feature1">Real-time monitoring</li>
+              <li data-i18n="pricing.feature2">Smart alerts</li>
+              <li data-i18n="pricing.feature3">Centralized management</li>
             </ul>
-            <button class="pricing-btn">Elegir plan</button>
+            <button class="pricing-btn" data-i18n="pricing.button">Choose plan</button>
           </article>
         </div>
       </div>
@@ -317,11 +291,9 @@
       <div class="quote-container">
         <div class="quote-content">
           <div class="quote-text">
-            <h2 class="quote-title">Solicita tu cotización personalizada</h2>
-            <p class="quote-description">
-              Déjanos tus datos y un asesor te contactará con una propuesta
-              logística a tu medida, sin compromiso y con la seguridad de
-              CargaSafe.
+            <h2 class="quote-title" data-i18n="quote.title">Request your personalized quote</h2>
+            <p class="quote-description" data-i18n="quote.description">
+              Leave us your details and an advisor will contact you with a customized logistics proposal, without obligation and with the security of CargaSafe.
             </p>
           </div>
 
@@ -332,7 +304,8 @@
                   type="email"
                   id="email"
                   name="email"
-                  placeholder="Correo"
+                  placeholder="Email"
+                  data-i18n="quote.email"
                   required
                 />
               </div>
@@ -343,7 +316,8 @@
                     type="text"
                     id="firstName"
                     name="firstName"
-                    placeholder="Primer nombre"
+                    placeholder="First name"
+                    data-i18n="quote.firstName"
                     required
                   />
                 </div>
@@ -352,7 +326,8 @@
                     type="text"
                     id="lastName"
                     name="lastName"
-                    placeholder="Segundo nombre"
+                    placeholder="Last name"
+                    data-i18n="quote.lastName"
                     required
                   />
                 </div>
@@ -362,14 +337,15 @@
                 <textarea
                   id="details"
                   name="details"
-                  placeholder="Detalles adicionales"
+                  placeholder="Additional details"
+                  data-i18n="quote.details"
                   rows="4"
                 ></textarea>
               </div>
 
               <div class="form-submit">
-                <button type="submit" class="btn-submit">
-                  Enviar solicitud
+                <button type="submit" class="btn-submit" data-i18n="quote.submit">
+                  Send request
                 </button>
               </div>
             </form>
@@ -381,45 +357,42 @@
     <section class="platform-section" id="platforms">
       <div class="platform-container">
         <div class="platform-header">
-          <p class="platform-overline">DISTRIBUCIÓN</p>
-          <h2 class="platform-title">Accede a la plataforma</h2>
+          <p class="platform-overline" data-i18n="platform.overline">DISTRIBUTION</p>
+          <h2 class="platform-title" data-i18n="platform.title">Access the platform</h2>
         </div>
 
         <div class="platform-grid">
           <div class="platform-card">
             <div class="platform-icon">
-              <img src="assets/platforms/d1.png" alt="Aplicación Web" />
+              <img src="assets/platforms/d1.png" alt="Web Application" />
             </div>
-            <h3 class="platform-card-title">Aplicación web</h3>
-            <p class="platform-card-description">
-              Accede directamente desde tu navegador, sin necesidad de
-              descargas.
+            <h3 class="platform-card-title" data-i18n="platform.web.title">Web Application</h3>
+            <p class="platform-card-description" data-i18n="platform.web.desc">
+              Access directly from your browser, no downloads required.
             </p>
-            <button class="platform-btn">Usar ahora</button>
+            <button class="platform-btn" data-i18n="platform.web.button">Use now</button>
           </div>
 
           <div class="platform-card">
             <div class="platform-icon">
-              <img src="assets/platforms/d2.png" alt="Aplicación iOS" />
+              <img src="assets/platforms/d2.png" alt="iOS Application" />
             </div>
-            <h3 class="platform-card-title">Aplicación iOS</h3>
-            <p class="platform-card-description">
-              Descarga la app desde la App Store y gestiona todo desde tu iPhone
-              o iPad.
+            <h3 class="platform-card-title" data-i18n="platform.ios.title">iOS Application</h3>
+            <p class="platform-card-description" data-i18n="platform.ios.desc">
+              Download the app from the App Store and manage everything from your iPhone or iPad.
             </p>
-            <button class="platform-btn">Descarga en iOS</button>
+            <button class="platform-btn" data-i18n="platform.ios.button">Download on iOS</button>
           </div>
 
           <div class="platform-card">
             <div class="platform-icon">
-              <img src="assets/platforms/d3.png" alt="Aplicación Android" />
+              <img src="assets/platforms/d3.png" alt="Android Application" />
             </div>
-            <h3 class="platform-card-title">Aplicación Android</h3>
-            <p class="platform-card-description">
-              Disponible en Google Play para que lo uses en cualquier
-              dispositivo Android.
+            <h3 class="platform-card-title" data-i18n="platform.android.title">Android Application</h3>
+            <p class="platform-card-description" data-i18n="platform.android.desc">
+              Available on Google Play to use on any Android device.
             </p>
-            <button class="platform-btn">Descarga en Android</button>
+            <button class="platform-btn" data-i18n="platform.android.button">Download on Android</button>
           </div>
         </div>
       </div>
@@ -447,10 +420,13 @@
         </div>
 
         <div class="footer-legal">
-          <p>© 2025 CargaSafe. Todos los derechos reservados.</p>
+          <p data-i18n="footer.rights">© 2025 CargaSafe. All rights reserved.</p>
         </div>
       </div>
     </footer>
+    
+    <!-- Scripts -->
+    <script src="i18n.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
