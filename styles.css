@@ -2013,3 +2013,108 @@ html {
     height: 28px;
   }
 }
+
+:root {
+  --accent: #0f172a;
+  --muted: #6b7280;
+}
+
+body {
+  background-color: #f8fafc;
+  font-family: 'Inter', system-ui, sans-serif;
+  color: #111827;
+  margin: 0;
+  padding: 0;
+}
+
+/*Terms and Conditions*/
+
+
+.terms-container {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.terms-card {
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 8px 24px rgba(15, 23, 42, 0.08);
+  padding: 2.5rem;
+  line-height: 1.65;
+}
+
+.terms-header h1 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #ff7a00; 
+  margin: 0;
+  text-align: center; 
+}
+
+.terms-body h2 {
+  margin-top: 1.5rem;
+  font-size: 1.15rem;
+  color: #ff7a00; 
+  font-weight: 600;
+}
+
+.terms-body a {
+  color: #2563eb;
+  text-decoration: underline;
+}
+
+.terms-footer {
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #e2e8f0;
+  color: var(--muted);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* ---- Footer general ---- */
+.footer {
+  background-color: #111827;
+  color: white;
+  padding: 30px 0 15px;
+  text-align: center;
+}
+
+.footer-container {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.footer-logo-img {
+  width: 120px;
+  margin-bottom: 10px;
+}
+
+.footer-social {
+  margin: 15px 0;
+}
+
+.footer-social img {
+  width: 28px;
+  height: 28px;
+  margin: 0 8px;
+  transition: opacity 0.2s ease;
+}
+
+.footer-social img:hover {
+  opacity: 0.7;
+}
+.footer-link {
+  color: #ff7a00;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #ff9f43;
+  text-decoration: underline;
+}

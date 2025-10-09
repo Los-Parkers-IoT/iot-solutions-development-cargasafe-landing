@@ -89,7 +89,8 @@ const translations = {
     'platform.android.button': 'Download on Android',
     
     // Footer
-    'footer.rights': '© 2025 CargaSafe. All rights reserved.'
+    'footer.rights': '© 2025 CargaSafe. All rights reserved.',
+    'terms.conditions': 'Terms and Conditions'
   },
   es: {
     // Navbar
@@ -180,6 +181,7 @@ const translations = {
     'platform.android.button': 'Descarga en Android',
     
     // Footer
-    'footer.rights': '© 2025 CargaSafe. Todos los derechos reservados.'
+    'footer.rights': '© 2025 CargaSafe. Todos los derechos reservados.',
+    'terms.conditions': 'Terminos y condiciones'
   }
 };
