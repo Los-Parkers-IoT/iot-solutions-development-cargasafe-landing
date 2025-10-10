@@ -2118,3 +2118,170 @@ body {
   color: #ff9f43;
   text-decoration: underline;
 }
+
+/* About Product Section */
+
+.about-product {
+    text-align: center;
+    padding: 40px 20px 80px;
+    background-color: #fff;
+}
+
+.about-product .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+
+.about-product .section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ff7b00;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+.video-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+    border: 2px solid #e6e6e6;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* efecto suave al pasar el cursor */
+.video-wrapper:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.video-wrapper iframe {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Team Section */
+.team {
+    padding: 60px 20px 90px;
+    background: #f9f9fb; /* leve contraste con blanco */
+    text-align: center;
+}
+
+.team .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.team .section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ff7b00; /* naranja de tus botones */
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 22px;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 3 por fila en desktop, 2 en tablet, 1 en móvil */
+.team-card {
+    grid-column: span 4;
+    background: #fff;
+    border: 1px solid #eee;
+    border-radius: 14px;
+    padding: 18px 18px 22px;
+    text-align: left;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.06);
+    transition: transform .25s ease, box-shadow .25s ease;
+}
+
+@media (max-width: 992px) {
+    .team-card { grid-column: span 6; }
+}
+@media (max-width: 600px) {
+    .team-card { grid-column: span 12; }
+}
+
+.team-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.10);
+}
+
+.team-photo {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    object-fit: cover;
+    display: block;
+    margin-bottom: 12px;
+    border: 2px solid #111;
+}
+
+.team-name {
+    font-size: 1rem;
+    font-weight: 700;
+    color: #ff7b00;       /* nombre en naranja */
+    margin: 2px 0 2px;
+}
+
+.team-role {
+    font-size: .92rem;
+    color: #666;
+    margin: 0 0 8px;
+}
+
+.team-bio {
+    font-size: .9rem;
+    color: #333;
+    line-height: 1.45;
+    margin: 0;
+}
+
+
+.about-team {
+    text-align: center;
+    padding: 50px 20px 90px;
+    background-color: #fff;
+}
+
+.about-team .section-title {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 25px;
+    position: relative;
+    display: inline-block;
+}
+
+.about-team .section-title::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 3px;
+    background-color: #ff7b00;
+    margin: 10px auto 0;
+    border-radius: 3px;
+}
